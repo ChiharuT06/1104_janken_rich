@@ -13,8 +13,9 @@ $('.tool-btn').on('click', function () {
    }else if($(this).closest("div").hasClass("page-4")){
     $(".page-5").fadeIn("slow");
    }else if($(this).closest("div").hasClass("page-5")){
-      $(".page-6").fadeIn("slow");
-   }
+    $(".page-6").fadeIn("slow");
+   }else if($(this).closest("div").hasClass("page-6")){
+    $(".page-7").fadeIn("slow");}
    }); 
  
 
