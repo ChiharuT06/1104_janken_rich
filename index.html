@@ -13,18 +13,24 @@
 <body>
  
     <header>
-        <h1 id="title">クイズ練習（複数）</h1>
+        <div class="top-title">
+            <h1 id="title">第１問</h1>
+        </div>
+        
     </header>
-    <main>
-        <p id="quest">ここに問題が出題されます</p>
-        <p>
-            <input type="radio" name="toi" value="1"><span id="toi1">選択肢１</span>
-            <input type="radio" name="toi" value="2"><span id="toi2">選択肢２</span>
-            <input type="radio" name="toi" value="3"><span id="toi3">選択肢３</span>
-            
-        </p>
-    </main>
-    <footer>フッター</footer>
+        <div class="quiz-all">
+            <main>
+                <p id="quest">ここに問題が出題されます</p>
+                <p >
+                    <div><input type="radio" name="toi" value="1"><span id="toi1">選択肢１</span></div>
+                    <div><input type="radio" name="toi" value="2"><span id="toi2">選択肢２</span></div>
+                    <div><input type="radio" name="toi" value="3"><span id="toi3">選択肢３</span></div>
+                    
+                </p>
+            </main>
+        </div>
+       
+    <footer class="ft">&copy;Chiharu_ganbaru.inc</footer>
 
 
     <script>
@@ -84,17 +90,31 @@
     //2.ラジオボタンをクリックしたらイベント発生！(クリックイベント)
     
     $("[name=toi]").on("click",function(){
-       if( $(this).val() == ans[i]){
-        alert("正解！");
+
+    
+       if( $(this).val() == ans[i])
+       
+         {
+            alert("正解！");
          }else{
             alert("ざんねん！");
-
+            
          }i++; //←配列が１進む
+        
+       if(i<6){
 
-           q(i);
-           t(i);
+        q(i);
+        t(i);
+
+       }
+
+       else{
+        alert("おしまい!また遊ぼうね！");
+       }
+         
         });
-   
+        
+        
 
     
     </script>

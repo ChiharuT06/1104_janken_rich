@@ -1,1 +1,16 @@
 @charset "utf-8";
+
+.top-title{
+    margin: auto;
+    text-align: center;
+}
+
+.quiz-all{
+    margin: auto;
+    text-align: center;
+    
+}
+
+.ft{
+    text-align: right;
+}
