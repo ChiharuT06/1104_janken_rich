@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
- 
+<body background="img/aoharu.jpg">
+ <div class="wrap">
     <header>
         <div class="top-title">
             <h1 id="title">第１問</h1>
@@ -22,9 +22,9 @@
             <main>
                 <p id="quest">ここに問題が出題されます</p>
                 <p >
-                    <div><input type="radio" name="toi" value="1"><span id="toi1">選択肢１</span></div>
-                    <div><input type="radio" name="toi" value="2"><span id="toi2">選択肢２</span></div>
-                    <div><input type="radio" name="toi" value="3"><span id="toi3">選択肢３</span></div>
+                    <div class="v"><input type="radio" name="toi" value="1"><span id="toi1">選択肢１</span></div>
+                    <div class="b"><input type="radio" name="toi" value="2"><span id="toi2">選択肢２</span></div>
+                    <div class="n"><input type="radio" name="toi" value="3"><span id="toi3">選択肢３</span></div>
                     
                 </p>
             </main>
@@ -32,6 +32,8 @@
        
     <footer class="ft">&copy;Chiharu_ganbaru.inc</footer>
 
+ </div>
+   
 
     <script>
     //以下に配列を記述してください
@@ -39,22 +41,22 @@
     
     //問題文[配列]
     const qs = [
-        "通るときには閉まって、通らないときには開いているものは何?",  //0番目の問題
-        "話すことがとても好きな道具は何?",                           //1番目の問題
-        "世界の真ん中にいる虫は何?",                                 //2番目の問題
-        "通るときには閉まって、通らないときには開いているものは何?",  //3番目の問題
-        "話すことがとても好きな道具は何?",                           //4番目の問題
-        "世界の真ん中にいる虫は何?"                                  //5番目の問題
+        "「明日は席替えの日、君とdisplay : flexの席になるといいな」",                                     //0番目の問題
+        "「今の僕では君の心のpaddingに入る余地はない」",                                                  //1番目の問題
+        "「私のmargin-right空いてるんだけどな…」",                                                       //2番目の問題
+        "「その笑顔を見る度に、僕の気持ちはoverflow : visible してしまう」",                              //3番目の問題
+        "「君に会えば恥ずかしくて、私はいつも気持ちをdisplay: noneしてしまう」",                           //4番目の問題
+        "「君との楽しかった思い出が、頭の中でdisplay : repeatされている」"                                 //5番目の問題
     ]; 
 
     //回答選択肢[多重配列]  
     const toi = [
-        [ "踏み切り", "洗濯機", "冷蔵庫" ],          //左から[0番目の0,0番目の1,0番目の2]
-        [ "スプーン", "シャベル", "しゃもじ" ],      //左から[1番目の0,1番目の1,1番目の2]
-        [ "てんとう虫", "カマキリ", "蚊" ],          //左から[2番目の0,2番目の1,2番目の2]
-        [ "踏み切り", "洗濯機", "冷蔵庫" ],          //左から[3番目の0,3番目の1,3番目の2]
-        [ "スプーン", "シャベル", "しゃもじ" ],      //左から[4番目の0,4番目の1,4番目の2]
-        [ "てんとう虫", "カマキリ", "蚊" ]           //左から[5番目の0,5番目の1,5番目の2]
+        [ "要素を並列にする", "要素を非表示にする", "要素を縮小する" ],                                                      //左から[0番目の0,0番目の1,0番目の2]
+        [ "ブロック要素の外側の余白", "ブロック要素内部の余白", "ブロック要素の左右の余白" ],                                 //左から[1番目の0,1番目の1,1番目の2]
+        [ "左の余白を指定する", "上下の余白を指定する", "右の余白を指定する" ],                                              //左から[2番目の0,2番目の1,2番目の2]
+        [ "はみ出た部分がそのまま表示される", "はみ出た部分がスクロールする", "はみ出た部分がブラウザにより表示を変える" ],    //左から[3番目の0,3番目の1,3番目の2]
+        [ "指定した要素がブロックボックスになる", "指定した要素が表示されなくなる", "指定した要素がインラインボックスになる" ],//左から[4番目の0,4番目の1,4番目の2]
+        [ "背景画像を非表示にする", "背景画像のサイズを変える", "背景画像を繰り返して表示する" ]                              //左から[5番目の0,5番目の1,5番目の2]
     ]; 
  
     //答え[配列]
@@ -109,7 +111,7 @@
        }
 
        else{
-        alert("おしまい!また遊ぼうね！");
+        alert("おしまい!また遊ぼうね！あなたの青春が輝きますように！");
        }
          
         });

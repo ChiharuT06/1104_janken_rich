@@ -1,14 +1,43 @@
 @charset "utf-8";
 
+body{
+    
+    background-position:center center;
+    background-size:cover;
+    background-repeat:  no-repeat;
+}
+    
+.wrap{
+    margin: 150px 0 auto;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
 .top-title{
-    margin: auto;
+    margin: 0 400px 40px auto;
     text-align: center;
+    justify-content: center; 
+    border: solid;
+    width: 700px;
+    font-weight: bolder;
 }
 
 .quiz-all{
     margin: auto;
     text-align: center;
-    
+    font-size: 1.3em;
+}
+
+.v{
+    font-size: 0.8em;
+}
+
+.b{
+    font-size: 0.8em;
+}
+
+.n{
+    font-size: 0.8em; 
 }
 
 .ft{
