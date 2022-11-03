@@ -30,12 +30,7 @@
     <script>
     //以下に配列を記述してください
     
-    //今何問目か
-    const ti = [
-        "第１問","第２問","第３問","第４問","第５問","第６問"
-
-    ]
-
+    
     //問題文[配列]
     const qs = [
         "通るときには閉まって、通らないときには開いているものは何?",  //0番目の問題
@@ -64,23 +59,24 @@
 
     let i= 0 ;                                      //iは0である
     function q(i){
-    $("#quest").html(qs[i]);
-    $("#toi1").html(toi[i][0]);
-    $("#toi2").html(toi[i][1]);
-    $("#toi3").html(toi[i][2]);
-    $("#toi4").html(toi[i][3]);
-    $("#toi5").html(toi[i][4]);
-    $("#toi6").html(toi[i][5]);
+    $("#quest").html(qs[i]);                        //id questに配列qrの0番目をhtmlで上書きする
+    $("#toi1").html(toi[i][0]);                     //id toi1(選択肢1）に配列toiの0番目の0を上書き
+    $("#toi2").html(toi[i][1]);                     //id toi2(選択肢2) に配列toiの0番目の1を上書き
+    $("#toi3").html(toi[i][2]);                     //id toi3(選択肢3) に配列toiの0番目の2を上書き
+   
      }
     //最初の問題を表示
     q(i);
 
-    let a = 0;
-    function t(a){
+    //今何問目か
+    const ti = [
+        "第１問","第２問","第３問","第４問","第５問","第６問"
+
+    ]
+
+    function t(i){
       
-    $("#title").html(ti[a]);
-    $("#title").html(ti[a][0]);
-    $("#title").html(ti[a][1]);
+    $("#title").html(ti[i]);
     
     }
 
