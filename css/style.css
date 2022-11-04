@@ -14,11 +14,11 @@ body{
 
 
 .top-title{
-    margin: 0 400px 40px auto;
+    margin: 0 auto;
     text-align: center;
     justify-content: center; 
     border: solid;
-    width: 700px;
+    max-width: 50%;
     font-weight: bolder;
 }
 
